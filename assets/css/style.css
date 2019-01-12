@@ -1,0 +1,34 @@
+body {
+    background-image: url("../Images/star-wars-background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-thumbnail {
+    background-color: green;
+    border: 2px solid green;
+    height: 100px;
+    width: 100px;
+    margin-top: -15px;
+  }
+
+  #yoda, #luke, #darth-sidious, #darth-vader  {
+    display: inline-block;
+    text-align: center;
+  }
+
+  #enemy-available {
+    background-color: red;
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+    margin-top: -15px;
+  }
+
+  .red {
+      color: red;
+  }
+
+  .btn-div {
+      display: inline-block;
+  }
