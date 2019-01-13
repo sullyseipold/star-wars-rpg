@@ -5,24 +5,28 @@ $(document).ready(function () {
         name: "yoda",
         health: 180,
         attack: 2,
+        attackBase: 2,
         counterAttak: 25,
     },
     {
         name: "darth-sidious",
         health: 150,
         attack: 4,
+        attackeBase: 4,
         counterAttak: 20
     },
     {
         name: "darth-vader",
         health: 120,
         attack: 6,
+        attackBase: 6,
         counterAttak: 15,
     },
     {
         name: "luke",
         health: 100,
         attack: 8,
+        attackBase: 8,
         counterAttak: 10,
     },
  ];
@@ -82,7 +86,7 @@ $(document).ready(function () {
 
                 defender.health = defender.health - attacker.attack;
                 attacker.health -= defender.counterAttak;
-                attacker.attack += attacker.attack;
+                attacker.attack += attacker.attackBase;
 
                 if (attacker.health < 0) {
                     $("#fighters").append("<h1> YOU LOST </h1").addClass("red");
